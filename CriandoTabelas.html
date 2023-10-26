@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Criando Tabelas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+
+    <body>
+        <h2>Criando Tabelas</h2>
+        <p>Para criar uma tabela precisamos de Linhas e Colunas, as mesmas são representadas pelas sintaxes abaixo</p>
+        <p>"< table > Responsável por criar a TABELA < / table >"</p>
+        <p>"< td > Responsável por criar a Célula < / td >"</p>
+        <p>"< tr > Responsável por criar a as Linhas < / tr >"</p>
+        <p>Exemplo:</p>
+        <table>
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h3>Colocando BORDA</h3>
+        <p>"< table border = "N° de pixels" > Responsável por criar a TABELA com borda < / table >"</p>
+        <table border="1">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h3>Colocando BORDA + COR</h3>
+        <p>"< table border = "N° de pixels"  bordercolor = "cor"> Responsável por criar a TABELA com borda + cor < / table >"</p>
+        <table border="3" bordercolor="navy">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h3>Colocando BORDA + COR na Tabela</h3>
+        <p>"< table border = "N° de pixels"  bordercolor = "cor" bgcolor = "cor" > Responsável por criar a TABELA com borda + cor + cor de fundo da tabela< / table >"</p>
+        <table border="3" bordercolor="navy" bgcolor="pink">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h3>Colocando cor em partes da tabela</h3>
+        <p>"< tr bgcolor = "cor" OU td bgcolor = "cor"> Responsável por colocar cor em partes específicas da tabela< / table >"</p>
+        <table border="3" bordercolor="navy" bgcolor="pink">
+            <tr bgcolor="orange">
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h3>Atribuindo Background</h3>
+        <p>"< table background = "imagem"> Responsável por colocar um background na tabela< / table >"</p>
+        <table  border="3" bordercolor="navy" background="logo.png">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h3>Mexendo no tamanho das células</h3>
+        <p>"< table width = "n° do pixel" OU height = "n° do pixel"> Responsável por mexer no tamanho da célula< / table >"</p>
+        <table border="3" bordercolor="navy" width="300" height="20%">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h3>Mexendo no alinhamento da tabela</h3>
+        <p>"< table align = "left"> Responsável por colocar a tabela a esqueda da página< / table >"</p>
+        <table border="3" bordercolor="navy" align="left">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <br>
+        <p>"< table align = "center"> Responsável por colocar a tabela no centro da página< / table >"</p>
+        <table border="3" bordercolor="navy" align="center">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <br>
+        <p>"< table align = "right"> Responsável por colocar a tabela a direita da página< / table >"</p>
+        <table border="3" bordercolor="navy" align="right">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+
+        <h3>Mexendo no espaço entre a borda e a célula</h3>
+        <p>"< table cellspacing = "n° de pixel"> Responsável por mexer no espaço entre a borda e a célula< / table >"</p>
+        <table border="3" bordercolor="navy" cellspacing="10">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <hr>
+        <p>"< table cellpadding = "n° de pixel"> Responsável por mexer no espaço entre a borda e a célula< / table >"</p>
+        <table border="3" bordercolor="navy" cellspacing="10" cellpadding="7">
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>Bulgari</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Split</td>
+            </tr>
+            <tr>
+                <td>Dwight</td>
+                <td>SemSobrenome</td>
+            </tr>
+        </table>
+        <hr>
+
+    </body>
+</html>
