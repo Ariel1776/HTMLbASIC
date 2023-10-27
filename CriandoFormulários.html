@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Criando Fomulários</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+
+    <body>
+        <h3>Criando Fomulários</h3>
+        <p>Para criar um Fomulário utilizamos a sintaxe "< form atributos > CONTEÚDO < / form >"</p>
+        <p>Exemplo:</p>
+        <form>Primeiro formulário</form>
+        <hr>
+
+        <h3>Atribuindo - ACTION</h3>
+        <p>Com o atributo ACTION, podemos especificar a URL do script no qual será enviado as informações"< form action = "EMAIL ou LINK" > CONTEÚDO < / form >"</p>
+        <p>Exemplo:</p>
+        <form action="arielweasley1776@gmail.com">Primeiro formulário</form>
+        <hr>
+
+        <h3>Atribuindo - METHOD</h3>
+        <p>Com o atributo METHOD, podemos especificar a maneira de envio dos dados para o servidor Web"< form method=" get _ post" > CONTEÚDO < / form >"</p>
+        <ul>
+            <li>get - Utilizado para respostas únicas;</li>
+            <li>post - Utilizado por permitir a transmissão de uma maior quantidade ao servidor; Envia os dados ao servidor</li>
+        </ul>
+        <hr>
+        
+        <h3>Atribuindo - VALUE</h3>
+        <FORM ACTION="email@email.com" METHOD="get">
+            <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=TEXT  NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+            <P>Estado: <INPUT TYPE =text NAME="uf" SIZE="2" VALUE="SP"></FONT></P>
+        </FORM>
+        <hr>
+
+        <h3>Atribuindo - Senha</h3>
+        <FORM ACTION="email@email.com" METHOD="get">
+            <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=TEXT  NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+            <P>Estado: <INPUT TYPE =text NAME="uf" SIZE="2" VALUE="SP"></FONT></P>
+            <p>Senha: <input type="password" name="senha" size="6"></p>
+        </FORM>
+        <hr>
+
+        <h3>Atribuindo - botões de escolha única</h3>
+        <FORM ACTION="email@email.com" METHOD="get">
+            <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+            <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+            <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+            <P>Selecione a bandeira do cartão de crédito:<BR>
+                <INPUT TYPE=radio NAME="selecao-cartao" CHECKED>VISA
+                <BR>
+                <INPUT TYPE=radio NAME="selecao-cartao">MASTERCARD
+            </P>
+        </FORM>
+        <hr>
+
+        <h3>Atribuindo - botões de multipla escolha</h3>
+        <FORM ACTION="email@email.com" METHOD="get">
+            <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+            <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+            <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+            <P>Selecione a bandeira do cartão de crédito:<BR>
+                <INPUT TYPE=radio NAME="vi" CHECKED>VISA<BR>
+                <INPUT TYPE=radio NAME="mst">MASTERCARD</P>
+            <P>Selecione horário de entrega:<BR>
+                <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR>
+                <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR>
+                <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h</P>
+        </FORM>
+        <hr>
+
+        <h3>Atribuindo - área de texto</h3>
+        <FORM ACTION="email@email.com" METHOD="get">
+            <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+            <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+            <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+            <P>Selecione a bandeira do cartão de crédito:<BR> 
+                <INPUT TYPE=radio NAME="vi" CHECKED>VISA<BR> 
+                <INPUT TYPE=radio NAME="mst">MASTERCARD</P>
+            <P>Selecione horário de entrega:<BR> 
+                <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR> 
+                <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR> 
+                <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h</P>
+            <P>Endereço: <INPUT TYPE=TEXT  NAME="end"  SIZE="30"</P>
+            <P>Referência: <TEXTAREA NAME="ref" ROWS="2" COLS= "40"></TEXTAREA></P>
+        </FORM>
+        <hr>
+        
+        <h3>Atribuindo - botão Submit & Reset</h3>
+        <FORM ACTION="email@email.com" METHOD="get">
+            <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+            <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+            <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+            <P>Selecione a bandeira do cartão de crédito:<BR>
+                <INPUT TYPE=radio NAME="vi" CHECKED>VISA<BR> 
+                <INPUT TYPE=radio NAME="mst">MASTERCARD</P>
+            <P>Selecione horário de entrega:<BR> 
+                <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR> 
+                <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR> 
+                <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h</P>
+            <P>Endereço: <INPUT TYPE=TEXT  NAME="end"  SIZE="30"</P>
+            <P>Referência: <TEXTAREA NAME="ref" ROWS="2" COLS= "30"></TEXTAREA></P>
+            <INPUT TYPE=submit VALUE="Enviar"><INPUT TYPE=reset VALUE="Limpar">
+        </FORM>
+        <hr>
+
+        <h3>Atribuindo - Lista de Opções</h3>
+        <p>Escolha a cidade que deseja conhecer</p>
+        <FORM>
+            <SELECT NAME="cidades" SIZE="4">
+                <OPTION>Londres 
+                <OPTION>Paris
+                <OPTION>Roma 
+                <OPTION>Madri
+            </SELECT>
+        </FORM>
+        <hr>
+
+        <h3>Atribuindo - Menu de opções</h3>
+        <p>Escolha a cidade que deseja conhecer</p>
+        <FORM>
+            <SELECT NAME="cidades">
+                <OPTION>Londres 
+                <OPTION>Paris
+                <OPTION>Roma 
+                <OPTION>Madri
+            </SELECT>
+        </FORM>
+        <hr>
+
+
+
+
+
+    </body>
+</html>
